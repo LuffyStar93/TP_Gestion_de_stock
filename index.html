@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Panier_Console</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="app.js"></script>
+</head>
+<body>
+	<header class="titre">
+		<h1>Gestion du stock</h1>
+	</header>
+	
+	<div class="sstitre">
+		<h3>Ajoutez vos articles au stock</h3>
+	</div>
+	<div class="formulaire1">
+		<form action="index.html" method="post" class="formfield">
+			<div id="cel 1" class="cel">
+		    	<label for="uname">Article:</label>
+		    	<input type="text" id="article" name="article">
+		    </div>
+		    
+		    <div id="cel 2" class="cel">
+		    	<label for="uname">Description de l'article:</label>
+		    	<textarea id="description" name="description" rows="3" cols="30" maxlength= "150" placeholder="150 caractères max"></textarea>
+		    </div>
+		    
+		    <div id="cel 3" class="cel">
+		    	<label for="uname">Prix de l'article:</label>
+		    	<input type="text" id="prix" name="prix">
+		  	</div>
+			
+			<div>
+				<button id="btn" type="reset" value="reset">Ajouter au stock</button>
+			</div>
+		</form>
+	</div>	
+	<div id="tableur">
+		<h4>Stock</h4>
+		<table id="tableur">
+			<thead>
+				<tr id="entete">
+					<th>Article</th>
+					<th>Référence</th>
+					<th>Description</th>
+					<th>Prix (€)</th>
+					<th>Modifier</th>
+					<th>Supprimer</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
